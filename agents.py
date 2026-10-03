@@ -9,9 +9,13 @@ load_dotenv()
 
 # model setup
 
-from langchain_ollama import ChatOllama
 
-llm = ChatOllama(model="llama3.2:latest", temperature=0)
+from langchain_groq import ChatGroq
+
+llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    temperature=0
+)
 
 # 1st agent 
 def build_search_agent():
