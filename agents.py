@@ -9,14 +9,12 @@ load_dotenv()
 
 # model setup
 
-
 from langchain_groq import ChatGroq
 
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    model="openai/gpt-oss-20b",
     temperature=0
 )
-
 # 1st agent 
 def build_search_agent():
     return create_agent(
