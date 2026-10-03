@@ -11,3 +11,4 @@ pydantic
 httpx
 rich
 langchain-ollama
+langchain-groq
